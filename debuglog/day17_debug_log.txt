@@ -1,0 +1,11 @@
+test_batch_prediction_shape (__main__.TestFruitModelPipeline.test_batch_prediction_shape)
+Test model returns correct prediction shape for batch input ... ok
+test_model_loads (__main__.TestFruitModelPipeline.test_model_loads)
+Test that the model loads and has the correct output shape ... ok
+test_single_image_prediction (__main__.TestFruitModelPipeline.test_single_image_prediction)
+Test model predicts a class within class_names for a single image ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 9.273s
+
+OK

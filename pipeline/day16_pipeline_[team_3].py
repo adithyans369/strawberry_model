@@ -21,10 +21,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras.preprocessing import image
 
-# ✅ Update path if needed
+
 extract_path = "/content/test_images"
 
-# ✅ Search recursively for images
+
 image_paths = glob(os.path.join(extract_path, "**", "*.jpg"), recursive=True) + \
               glob(os.path.join(extract_path, "**", "*.jpeg"), recursive=True) + \
               glob(os.path.join(extract_path, "**", "*.png"), recursive=True)
@@ -44,12 +44,12 @@ for img_path in image_paths:
         predicted_index = np.argmax(predictions[0])
         predicted_label = class_names[predicted_index]
 
-        print(f"🖼️ {os.path.basename(img_path)}: {predicted_label} (index {predicted_index})")
+        print(f" {os.path.basename(img_path)}: {predicted_label} (index {predicted_index})")
         plt.imshow(img)
         plt.title(f"Predicted: {predicted_label}")
         plt.axis('off')
         plt.show()
 
     except Exception as e:
-        print(f"⚠️ Error with image {img_path}: {e}")
+        print(f" Error with image {img_path}: {e}")
 
